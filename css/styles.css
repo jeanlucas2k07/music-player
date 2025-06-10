@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+    background-image: linear-gradient(to bottom right, #1f1c19, #2f2a24, #5c5247);
+    ;
+}
+
+.text {
+    color: rgb(237, 235, 231);
+    font-size: 20px;
+}
+
+#player {
+    background-color: #2f2a24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0px #3c342c, 0 4px 8px 0px #29221b;
+    padding-inline: 15px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.artist {
+    color: rgb(139, 138, 136);
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.album .text {
+    color: rgb(237, 235, 231);
+    font-size: 20px;
+}
+
+.album img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+#music {
+    width: 100%;
+}
+
+#music p {
+    font-size: 16px;
+}
+
+#player {
+    min-height: 90vh;
+    min-width: 23vw;
+    border-radius: 30px;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+}
+
+#papa {
+    width: 100%;
+    padding: 0 10px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #444;
+    accent-color: #503926;
+    /* muda a cor da barrinha nos navegadores modernos */
+}
+
+
+.player-buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.like {
+    align-self: flex-end;
+}
+
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button i {
+    color: rgb(237, 235, 231);
+    font-size: 24px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Sopofy</title>
+</head>
+
+<body>
+    <section id="player">
+        <h2 class="text">The Tortured Poets Departament</h2>
+        <div class="album">
+
+            <img src="https://m.media-amazon.com/images/I/61n4O1WTGAL._UXNaN_FMjpg_QL85_.jpg"
+                alt="capa do ttpd, da taytay">
+
+            <div id="music">
+                <p class="text">Fortnight (feat. Post Malone)</p>
+                <p class="artist">Taylor Swift</p>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div id="papa">
+                <audio id="audio-element" src="./musics/music.mp3" hidden></audio>
+                <input type="range" id="progress-bar">
+            </div>
+
+            <div class="player-buttons">
+                <button id="backward" class="button"><i class="fa-solid fa-backward"></i></button>
+                <button id="play" class="button"><i class="fa-solid fa-play"></i></button>
+                <button id="forward" class="button"><i class="fa-solid fa-forward"></i></button>
+            </div>
+
+            <div class="like">
+                <button class="button" id="like-button">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
