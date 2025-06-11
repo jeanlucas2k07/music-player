@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 120%; /* simula zoom de 120% com base em fontes */
 }
 
 body {
@@ -10,12 +15,14 @@ body {
     align-items: center;
     padding-block: 50px;
     background-image: linear-gradient(to bottom right, #1f1c19, #2f2a24, #5c5247);
-    ;
+    flex-direction: column;
+    background-color: #1f1c19;
+    padding-inline: 15px;
 }
 
 .text {
     color: rgb(237, 235, 231);
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px com base em html 120% */
 }
 
 #player {
@@ -27,6 +34,14 @@ body {
     padding-inline: 15px;
     flex-direction: column;
     gap: 15px;
+    min-height: 85vh;
+    min-width: 23vw;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+#player:hover{
+    transform: translateY(-10px);
 }
 
 .artist {
@@ -43,11 +58,12 @@ body {
 
 .album .text {
     color: rgb(237, 235, 231);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .album img {
-    width: 350px;
+    width: 100%; /* responsivo */
+    max-width: 350px;
     border-radius: 10px;
 }
 
@@ -56,13 +72,7 @@ body {
 }
 
 #music p {
-    font-size: 16px;
-}
-
-#player {
-    min-height: 90vh;
-    min-width: 23vw;
-    border-radius: 30px;
+    font-size: 1rem; /* ~16px */
 }
 
 .music-player {
@@ -85,19 +95,16 @@ body {
     border-radius: 5px;
     background-color: #444;
     accent-color: #503926;
-    /* muda a cor da barrinha nos navegadores modernos */
 }
-
 
 .player-buttons {
     display: flex;
-    gap: 50px;
+    gap: 3rem; /* espaçamento proporcional */
 }
 
 .like {
     align-self: flex-end;
 }
-
 
 .button {
     background: none;
@@ -110,5 +117,37 @@ body {
 
 .button i {
     color: rgb(237, 235, 231);
-    font-size: 24px;
+    font-size: 1.5rem; /* ~24px */
+}
+
+
+#playlist {
+    width: 70vh;
+    min-height: 10vh;
+    margin-top: 70px;
+}
+
+.musica{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding-inline: 15px;
+    background-color: #2f2a24;
+    margin-top: 15px;
+}
+
+.musica .name{
+    color: rgb(237, 235, 231);
+}
+
+.musica img {
+    width: 100px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 900px) {
+    #playlist {
+        width: 10vw;
+    }
 }
